@@ -1,0 +1,3 @@
+i want to make a plimco game and user should be able to customise things and also make it offline
+
+And keep the UI cartoonish

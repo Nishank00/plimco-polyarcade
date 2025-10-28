@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\")",
+      "Bash(npx create-next-app@latest plimco-app --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(xcopy /E /I /Y plimco-app* .)",
+      "Bash(robocopy plimco-app . /E /MOVE)",
+      "Bash(robocopy plimco-app . /S /MOVE /NFL /NDL /NJH /NJS)",
+      "Bash(npm install matter-js @types/matter-js next-pwa)",
+      "Bash(npm run dev)",
+      "Bash(dir)",
+      "Bash(dir:*)",
+      "Bash(powershell -Command \"Get-ChildItem -Path plimco-app -Recurse | Move-Item -Destination . -Force\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
