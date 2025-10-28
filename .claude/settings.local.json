@@ -10,7 +10,8 @@
       "Bash(npm run dev)",
       "Bash(dir)",
       "Bash(dir:*)",
-      "Bash(powershell -Command \"Get-ChildItem -Path plimco-app -Recurse | Move-Item -Destination . -Force\")"
+      "Bash(powershell -Command \"Get-ChildItem -Path plimco-app -Recurse | Move-Item -Destination . -Force\")",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

@@ -3,7 +3,7 @@ import Matter from 'matter-js';
 import { GameSettings } from '@/types/game';
 
 export const usePlinkoPhysics = (
-  canvasRef: React.RefObject<HTMLCanvasElement>,
+  canvasRef: React.RefObject<HTMLCanvasElement | null>,
   settings: GameSettings,
   multipliers: number[],
   onBallLanded: (slotIndex: number, betAmount: number) => void
@@ -73,8 +73,6 @@ export const usePlinkoPhysics = (
         fillStyle: '#22d3ee',
         strokeStyle: '#06b6d4',
         lineWidth: 2,
-        shadowBlur: 15,
-        shadowColor: '#22d3ee',
       }
     };
 
@@ -196,8 +194,6 @@ export const usePlinkoPhysics = (
         fillStyle: '#fbbf24',
         strokeStyle: '#f59e0b',
         lineWidth: 3,
-        shadowBlur: 20,
-        shadowColor: '#fbbf24',
       },
       label: `ball-${Date.now()}`,
       plugin: { betAmount } // Store bet amount with the ball
