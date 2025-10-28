@@ -83,7 +83,7 @@ export default function PlinkoGame() {
         {/* Compact Header */}
         <header className="text-center mb-4">
           <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 mb-1">
-            PLINKO
+            PLIMCO
           </h1>
           <p className="text-sm text-purple-300">Drop • Bounce • Win!</p>
         </header>
